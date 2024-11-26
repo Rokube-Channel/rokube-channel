@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="FetchStream" extends="Task">
+    <script type="text/brightscript" uri="FetchStream.brs" />
+    <interface>
+        <field id="video_id" type="string" />
+        <field id="response" type="assocarray" />
+    </interface>    
+</component>

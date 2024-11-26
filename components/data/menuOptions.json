@@ -1,0 +1,6 @@
+[
+    { "title": "Usuario", "link": "Users", "img": "pkg:/images/icons/circle-user.png" },
+    { "title": "Buscar", "link": "Search", "img": "pkg:/images/icons/magnifying-glass.png" },
+    { "title": "Principal", "link": "Home", "img": "pkg:/images/icons/house.png" },
+    { "title": "Historial", "link": "History", "img": "pkg:/images/icons/clock-rotate-left.png" }
+]

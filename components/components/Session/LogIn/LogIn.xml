@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="LogIn" extends="Rectangle">
+    <script type="text/brightscript" uri="LogIn.brs" />
+    <interface>
+        <field id="title" value="" type="string" onChange="setTexts" alwaysNotify="true"/>
+        <field id="subtitle" value="" type="string" onChange="setTexts" alwaysNotify="true"/>
+        <field id="description" value="" type="string" onChange="setTexts" alwaysNotify="true"/>
+        <field id="codeMessage" value="" type="string" onChange="setTexts" alwaysNotify="true"/>
+        <field id="textColor" value="#fff" type="color" onChange="setColor" alwaysNotify="true"/>
+    </interface>
+    <children>
+        <LayoutGroup id="container"
+            translation="[115,115]"
+            itemSpacings="[50]"
+            layoutDirection="horiz">
+            <LayoutGroup
+                itemSpacings="[50]">
+                <Label id="title"
+                    width="500"
+                    wrap="true"
+                    font="font:MediumBoldSystemFont"
+                    horizAlign="center"
+                    maxLines="3"/>
+                <Label id="subtitle"
+                    width="500"
+                    wrap="true"
+                    horizAlign="center"
+                    maxLines="6"/> 
+            </LayoutGroup>
+            <LayoutGroup
+                itemSpacings="[20]">
+                <Poster id="qr"
+                    width = "500"
+                    height = "245"
+                    loadDisplayMode = "scaleToFit"/>
+                <Label id="description"
+                    width="500"
+                    wrap="true"
+                    horizAlign="center"
+                    maxLines="2"/>
+                <Label id="link"
+                    width="500"
+                    wrap="true"
+                    font="font:MediumBoldSystemFont"
+                    horizAlign="center"
+                    maxLines="2"/>
+                <Label id="codeMessage"
+                    width="500"
+                    wrap="true"
+                    horizAlign="center"
+                    maxLines="2"/>
+                <Label id="code"
+                    width="500"
+                    wrap="true"
+                    font="font:MediumBoldSystemFont"
+                    horizAlign="center"
+                    maxLines="2"/> 
+            </LayoutGroup>
+        </LayoutGroup>
+        <Timer id="timer"
+            repeat="true"
+            duration="5"/>
+    </children>
+</component>

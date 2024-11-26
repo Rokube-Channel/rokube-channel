@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="Stream" extends="Rectangle">
+    <script type="text/brightscript" uri="Stream.brs" />
+    <interface>
+        <field id="video_id" type="string" value="" onChange="setVideoId" alwaysNotify="true"/>
+    </interface>
+    <children>
+        <Video id = "video"/>
+    </children>
+</component>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="Result" extends="LayoutGroup">
+    <interface>
+        <field id="uri" type="string" alias="img.uri" />
+        <field id="duration" type="string" alias="duration.text" />
+        <field id="title" type="string" alias="title.text" />
+        <field id="subtitle" type="string" alias="subtitle.text" />
+        <field id="views" type="string" alias="views.text" />
+        <field id="date" type="string" alias="date.text" />
+    </interface>
+    <children>
+        <Group>
+            <Poster id="img"
+                width="336"
+                height="188"
+                loadDisplayMode = "scaleToFit"/>
+            <Rectangle 
+                color="#000000CD"
+                translation="[0,170]"
+                width="336"
+                height="20"/>
+            <Label id="duration"
+                font="font:SmallestBoldSystemFont"
+                width="336"
+                horizAlign="right"
+                translation="[0,170]"/>
+        </Group>
+        <Label id="title"
+            font="font:MediumBoldSystemFont"
+            wrap="true"
+            numLines="2"
+            width="336"/>
+        <Label id="subtitle"
+            font="font:MediumBoldSystemFont"
+            width = "336"/>
+        <LayoutGroup
+            itemSpacings="10"
+            layoutDirection="horiz">
+            <Label id="views"
+                width="163"/>
+            <Label id="date"
+                width="163"/>
+        </LayoutGroup>
+    </children>
+</component>

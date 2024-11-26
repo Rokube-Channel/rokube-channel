@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="User" extends="LayoutGroup">
+    <interface>
+        <field id = "profile_picture" type = "string" alias = "img.uri" alwaysNotify="true"/>
+        <field id = "nickname" type = "string" alias = "title.text" alwaysNotify="true"/>    
+    </interface>
+    <children>
+        <Poster id = "img"
+            width="300"
+            height="300"
+            loadDisplayMode = "scaleToFit" />
+        <Label id = "title"
+            font="font:MediumBoldSystemFont"
+            width="300"
+            wrap="true"
+            horizAlign="center"
+            maxLines="2" />
+    </children>
+</component>

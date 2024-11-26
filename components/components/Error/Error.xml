@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="Error" extends="Rectangle">
+    <script type="text/brightscript" uri="Error.brs" />
+    <interface>
+        <field id="title" value="" type="string" onChange="setTexts" alwaysNotify="true"/>
+        <field id="subtitle" value="" type="string" onChange="setTexts" alwaysNotify="true"/>
+        <field id="description" value="" type="string" onChange="setTexts" alwaysNotify="true"/>
+        <field id="codeMessage" value="" type="string" onChange="setTexts" alwaysNotify="true"/>
+        <field id="textColor" value="#fff" type="color" onChange="setColor" alwaysNotify="true"/>
+        <field id="blendColor" value="#fff" type="color" onChange="setBlendColor" alwaysNotify="true"/>
+    </interface>
+    <children>
+        <LayoutGroup id="container"
+            translation="[140, 115]"
+            itemSpacings="20">
+            <Poster id="img"
+                loadDisplayMode = "scaleToFit"
+                width = "1000"
+                height = "240"
+                uri = "pkg:/images/icons/bug.png"/>
+            <Label id="title"
+                width="1000"
+                wrap="true"
+                font="font:MediumBoldSystemFont"
+                horizAlign="center"
+                maxLines="2"/>
+            <Label id="subtitle"
+                width="1000"
+                wrap="true"
+                font="font:MediumBoldSystemFont"
+                horizAlign="center"
+                maxLines="2"/>
+            <Label id="description"
+                width="1000"
+                wrap="true"
+                horizAlign="center"
+                maxLines="2"/>
+        </LayoutGroup>
+    </children>
+</component>

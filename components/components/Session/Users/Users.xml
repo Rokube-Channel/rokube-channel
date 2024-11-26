@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="Users" extends="Rectangle">
+    <script type="text/brightscript" uri="Users.brs" />
+    <interface>
+        <field id = "content" type = "roArray" value = "[]" onChange = "setContent" alwaysNotify="true"/>
+        <field id = "focusBitmapBlendColor" type = "color" value = "#ffffff" onChange = "setFocusBitmapBlendColor" alwaysNotify="true"/>
+        <field id = "blendColor" type = "color" value = "#ffffff" onChange = "setUsersColor" alwaysNotify="true"/>
+        <field id = "textColor" type = "color" value = "#ffffff" onChange = "setUsersColor" alwaysNotify="true"/>
+        <field id = "focusBlendColor" type = "color" value = "#ffffff" onChange = "setUsersColor" alwaysNotify="true"/>
+        <field id = "focusTextColor" type = "color" value = "#ffffff" onChange = "setUsersColor" alwaysNotify="true"/>
+    </interface>
+    <children>
+        <LayoutGroup id="container"
+            translation="[115,115]">
+            <MarkupGrid id="users" 
+                itemComponentName="MarkupListUser"
+                itemSize="[300,400]"
+                itemSpacing="[20, 0]"
+                numColumns="4"
+                horizFocusAnimationStyle="fixedFocus"
+                numRows="1"/>
+            <PosterGrid id="logout" 
+                itemSize="[300,50]"
+                itemSpacing="[20, 0]"
+                numColumns="4"
+                horizFocusAnimationStyle="fixedFocus"
+                posterDisplayMode="scaleToFit"
+                numRows="1">
+            </PosterGrid>
+        </LayoutGroup>
+    </children>
+</component>

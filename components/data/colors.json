@@ -1,0 +1,10 @@
+{
+    "color-text": "#F5EDED",
+    "color-primary": "#3E3636",
+    "color-secondary": "#D72323",
+    "color-bg": "#000",
+    
+    "opacity-100": "#ffffffff", 
+    "opacity-50": "#ffffff7f",
+    "opacity-25": "#ffffff3f"
+}

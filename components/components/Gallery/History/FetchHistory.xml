@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="FetchHistory" extends="Task">
+    <script type="text/brightscript" uri="FetchHistory.brs" />
+    <interface>
+        <field id="page" type="int" value="0" />
+        <field id="response" type="assocarray" />
+    </interface>    
+</component>

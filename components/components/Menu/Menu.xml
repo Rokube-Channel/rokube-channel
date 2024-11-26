@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="Menu" extends="Group">
+    <script type="text/brightscript" uri="Menu.brs" />
+    <interface>
+        <field id = "width" type = "float" value = "0" onChange = "setWidth" alwaysNotify = "true"/>
+        <field id = "height" type = "float" value = "0" onChange = "setHeight" alwaysNotify = "true"/>
+        <field id = "color" type = "color" value = "#000000" onChange = "setColor" alwaysNotify = "true"/>
+        <field id = "content" type = "roArray" value = "[]" onChange = "setContent" alwaysNotify="true"/>
+        <field id = "focusBitmapBlendColor" type = "color" value = "#ffffff" onChange = "setFocusBitmapBlendColor" alwaysNotify="true"/>
+        <field id = "blendColor" type = "color" value = "#ffffff" onChange = "setOptionColor" alwaysNotify="true"/>
+        <field id = "textColor" type = "color" value = "#ffffff" onChange = "setOptionColor" alwaysNotify="true"/>
+        <field id = "focusBlendColor" type = "color" value = "#ffffff" onChange = "setOptionColor" alwaysNotify="true"/>
+        <field id = "focusTextColor" type = "color" value = "#ffffff" onChange = "setOptionColor" alwaysNotify="true"/>
+    </interface>
+    <children>
+        <Rectangle id = "container"
+            width = "0"/>
+        <MarkupList id = "options"
+            itemSpacing = "[0,10]" 
+            drawFocusFeedback = "false"
+            itemComponentName = "Options"/>
+    </children>
+</component>

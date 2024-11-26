@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="FetchLogout" extends="Task">
+    <script type="text/brightscript" uri="FetchLogout.brs" />
+    <interface>
+        <field id="response" type="assocarray" />
+    </interface>
+</component>

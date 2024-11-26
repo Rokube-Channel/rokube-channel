@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="MarkupListUser" extends="User">
+    <script type="text/brightscript" uri="MarkupListUser.brs" />
+    <interface>
+        <field id = "itemContent" type = "node" onChange = "setItemContent" alwaysNotify="true"/>
+        <field id = "focusPercent" type = "float" onChange = "setFocusPercent" alwaysNotify="true"/>    
+    </interface>
+</component>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="FetchLogin" extends="Task">
+    <script type="text/brightscript" uri="FetchLogin.brs" />
+    <interface>
+        <field id="x_device" type="string" value="" />
+        <field id="response" type="assocarray" />
+    </interface>    
+</component>

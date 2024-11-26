@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<component name="StackNavigator" extends="Node">  
+    <script type="text/brightscript" uri="StackNavigator.brs" />
+
+    <interface>
+        <function name="ShowScreen" />
+        <function name="CloseScreen" />
+        <function name="ClearStackNavigator" />
+        <function name="CountStackNavigator" />
+        <function name="CurrentScreen" />
+        <function name="GetScreen" />
+    </interface>
+</component>

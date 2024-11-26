@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="History" extends="Rectangle">
+    <script type="text/brightscript" uri="History.brs" />
+    <interface>
+        <field id = "content" type = "array" value = "[]" onChange = "setContent" alwaysNotify="true"/>
+        <field id = "focusBitmapBlendColor" type = "color" value = "#ffffff" onChange = "setFocusBitmapBlendColor" alwaysNotify="true"/>
+        <field id = "blendColor" type = "color" value = "#ffffff" onChange = "setContentAux" alwaysNotify="true"/>
+        <field id = "textColor" type = "color" value = "#ffffff" onChange = "setContentAux" alwaysNotify="true"/>
+        <field id = "focusBlendColor" type = "color" value = "#ffffff" onChange = "setContentAux" alwaysNotify="true"/>
+        <field id = "focusTextColor" type = "color" value = "#ffffff" onChange = "setContentAux" alwaysNotify="true"/>
+    </interface>
+    <children>
+        <Group id="container"
+            translation="[115,115]">
+            <MarkupGrid id="results"
+                itemComponentName = "MarkupListResult"
+                itemSize = "[336, 280]" 
+                itemSpacing = "[ 30, 30 ]"
+                vertFocusAnimationStyle="fixedFocus"
+                numColumns="3"
+                numRows="2"/>
+        </Group>
+    </children>
+</component>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="Load" extends="Rectangle">
+    <script type="text/brightscript" uri="Load.brs" />
+    <interface>
+        <field id="load" type="boolean" value="false" onChange="setVisible" alwaysNotify = "true" />
+        <field id="blendColor" type="color" value="#ffffff" onChange="setBlendColor" alwaysNotify = "true" />
+    </interface>
+    <children>
+        <BusySpinner id = "load"
+            translation="[ 590, 310 ]"/>
+    </children>
+</component>

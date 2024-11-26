@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<component name="MainScene" extends="Scene">
+    <script type="text/brightscript" uri="MainScene.brs" />
+    <children>
+        <LayoutGroup 
+            itemSpacings="0"
+            layoutDirection="horiz">
+            <Menu id="menu" scale="[0,1]"/>
+            <Group id="views" />
+        </LayoutGroup>
+        <Load id="load"/>
+        <Overhang id="overhang"
+            showClock = "true"
+            showOptions = "true"
+            optionsAvailable = "true" />
+        <Animation id="menuAnimation"
+            duration="0.2"
+            easeFunction = "linear">
+            <Vector2DFieldInterpolator
+              key="[0.0,1.0]"
+              keyValue = "[[0.0,1], [1.0,1.0]]"
+              fieldToInterp = "menu.scale"/>
+        </Animation>
+    </children>
+</component>

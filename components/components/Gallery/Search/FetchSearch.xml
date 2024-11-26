@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="FetchSearch" extends="Task">
+    <script type="text/brightscript" uri="FetchSearch.brs" />
+    <interface>
+        <field id="search" type="string" />
+        <field id="page" type="int" value="0" />
+        <field id="response" type="assocarray" />
+    </interface>    
+</component>

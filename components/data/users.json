@@ -1,0 +1,5 @@
+[
+    { "account_name": "Agregar una Cuenta", "account_photo": "pkg:/images/icons/circle-plus.png", "link": "Login" },
+    { "account_name": "Invitado", "account_photo": "pkg:/images/icons/circle-user.png", "link": "Account" },
+    { "account_name": "Credenciales de YouTube API", "account_photo": "pkg:/images/icons/id-badge.png", "link": "APICredentials" }
+]

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="Search" extends="Rectangle">
+    <script type="text/brightscript" uri="Search.brs" />
+    <interface>
+        <field id = "resultsContent" type = "array" value = "[]" onChange = "setResultsContent" alwaysNotify="true"/>
+        <field id = "suggestionsContent" type = "array" value = "[]" onChange = "setSuggestionsContent" alwaysNotify="true"/>
+        <field id = "hintText" type="string" value = "Search..." onChange = "setHintText"  alwaysNotify="true"/>
+        <field id = "hintTextColor" type="color" value = "#ffffff" onChange = "setHintTextColor"  alwaysNotify="true"/>
+        <field id = "textColor" type="color" value = "#ffffff" onChange = "setTextColor"  alwaysNotify="true"/>
+        <field id = "searchTextDefault" type="string" value = "" onChange = "setResults"  alwaysNotify="true"/>
+        <field id = "searchTextOK" type="string" value = "" onChange = "setResults"  alwaysNotify="true"/>
+        <field id = "searchTextFail" type="string" value = "" onChange = "setResults"  alwaysNotify="true"/>
+        <field id = "focusBitmapBlendColor" type = "color" value = "#ffffff" onChange = "setFocusBitmapBlendColor" alwaysNotify="true"/>
+        <field id = "resultsBlendColor" type = "color" value = "#ffffff" onChange = "setResults" alwaysNotify="true"/>
+        <field id = "resultsTextColor" type = "color" value = "#ffffff" onChange = "setResults" alwaysNotify="true"/>
+        <field id = "resultsFocusBlendColor" type = "color" value = "#ffffff" onChange = "setResults" alwaysNotify="true"/>
+        <field id = "resultsFocusTextColor" type = "color" value = "#ffffff" onChange = "setResults" alwaysNotify="true"/>
+        <field id = "suggestionsBlendColor" type = "color" value = "#ffffff" onChange = "setSuggestionsColor" alwaysNotify="true"/>
+        <field id = "suggestionsTextColor" type = "color" value = "#ffffff" onChange = "setSuggestionsColor" alwaysNotify="true"/>
+        <field id = "suggestionsFocusBlendColor" type = "color" value = "#ffffff" onChange = "setSuggestionsColor" alwaysNotify="true"/>
+        <field id = "suggestionsFocusTextColor" type = "color" value = "#ffffff" onChange = "setSuggestionsColor" alwaysNotify="true"/>
+    </interface>
+    <children>
+        <LayoutGroup id="container"
+            translation="[115,37]">
+            <Rectangle>
+                <TextEditBox id="input"
+                    translation = "[165,0]"
+                    leadingEllipsis="true"
+                    hintText=""
+                    width="700" />
+            </Rectangle>
+            <LayoutGroup
+                itemSpacings="50"
+                layoutDirection="horiz">
+                <MiniKeyboard id="keyboard"
+                    scale="[0.65,0.65]"/>
+                <MarkupGrid id="suggestions"
+                    itemComponentName = "Suggestion"
+                    vertFocusAnimationStyle="fixedFocus"
+                    itemSize="[540,30]"
+                    itemSpacing = "[0,10]" 
+                    numRows = "6"
+                    numColumns = "1"/>
+            </LayoutGroup>
+            <RowList id="results"
+                itemComponentName = "RowListResult"
+                itemSize = "[ 1608, 350 ]"
+                rowItemSize = "[ [336, 280] ]" 
+                rowItemSpacing = "[ [ 30, 0 ] ]"
+                rowLabelOffset="[ [0, 10] ]"
+                showRowLabel = "[ true ]"
+                rowFocusAnimationStyle="fixedFocus"
+                numRows="1"/>
+        </LayoutGroup>
+    </children>
+</component>

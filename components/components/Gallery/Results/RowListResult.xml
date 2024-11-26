@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="RowListResult" extends="Result">
+    <script type="text/brightscript" uri="RowListResult.brs" />
+    <interface>
+        <field id = "itemContent" type="node" onChange="setItemContent" />
+        <field id = "focusPercent" type = "float" onChange = "setFocusPercent" />
+        <field id = "rowFocusPercent" type = "float" onChange = "setFocusPercent"/>
+    </interface>
+</component>

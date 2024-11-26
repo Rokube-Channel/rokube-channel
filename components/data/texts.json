@@ -1,0 +1,27 @@
+{
+    "name": "RoKube",
+    "options": "Menú",
+
+    "login_title": "Accede con tu Cuenta de Google",
+    "login_subtitle": "Si accedes a tu cuenta, encontrarás todos los videos y canales que te encantan, sin ver los de los demás",
+    "login_description": "Escanea el código con tu teléfono o ve a",
+    "login_code_message": "Ingresa el siguiente código",
+
+    "search_message_default": "Busca tus videos favoritos",
+    "search_message_ok": "Resultado de la búsqueda",
+    "search_message_fail": "No se encontraron resultados",
+    "search_hint": "Buscar...",
+
+    "account_title": "Te damos la bienvenida",
+    "account_subtitle": "Estamos preparando tu perfil",
+
+    "logout_title": "Esperamos verte pronto",
+    "logout_subtitle": "Estamos cerrando tu perfil",
+
+    "error_title": "¡Vaya! Algo salió mal",
+    "error_subtitle": "Lo sentimos, algo no salió como esperábamos. Inténtalo de nuevo más tarde.",
+    "error_description": "Si el problema persiste, envíanos un correo describiendo el problema. ¡Estamos aquí para ayudarte!",
+
+    "client_secret": "Secreto del cliente",
+    "client_id" :"ID de cliente"
+}

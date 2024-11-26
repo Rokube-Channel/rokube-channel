@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="Options" extends="LayoutGroup">
+    <script type="text/brightscript" uri="Options.brs" />
+    <interface>
+        <field id = "width" type = "float" onChange = "setWidth" alwaysNotify="true"/> 
+        <field id = "height" type = "float" onChange = "setHeight" alwaysNotify="true"/>
+        <field id = "itemContent" type = "node" onChange = "setItemContent" alwaysNotify="true"/>
+        <field id = "focusPercent" type = "float" onChange = "setFocusPercent" alwaysNotify="true"/>
+    </interface>
+    <children>
+        <Poster id = "img"
+            loadDisplayMode = "scaleToFit" />
+        <Label id = "title"
+            vertAlign = "center" />
+    </children>
+</component>
