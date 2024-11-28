@@ -54,6 +54,7 @@ sub setResponse(event as Object)
         account_byline: m.top.id
     }
     try
+        print(body)
         if body<>invalid and body["userInfo"]<>invalid and body["userInfo"]["account_name"]<>invalid
             data = {
                 account_name: body["userInfo"]["account_name"],
@@ -61,7 +62,7 @@ sub setResponse(event as Object)
                 account_byline: body["userInfo"]["account_byline"]
             }
         end if
-        
+        print("profile")
         m.global.profile = data
         m.top.nickname = data["account_name"]
         m.top.profile_picture = data["account_photo"]

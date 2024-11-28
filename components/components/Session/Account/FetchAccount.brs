@@ -10,9 +10,9 @@ sub request()
         xfer.SetCertificatesFile("common:/certs/ca-bundle.crt")
         xfer.SetRequest("GET")
         if m.global.credentials<>invalid
+            youtubeAPI = getYoutubeAPILocalStorage()
             xfer.AddHeader("Authorization", "Bearer "+FormatJson(m.global.credentials))
             if youtubeAPI<>invalid
-                youtubeAPI = getYoutubeAPILocalStorage()
                 xfer.AddHeader("clientid", youtubeAPI["client_id"])
                 xfer.AddHeader("clientsecret", youtubeAPI["client_secret"])
             end if

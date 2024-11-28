@@ -15,7 +15,7 @@ sub Main()
     m.global.scene = screen.CreateScene("MainScene")
     m.global.colors = ParseJson(ReadAsciifile("pkg:/components/data/colors.json"))
     m.global.texts = ParseJson(ReadAsciifile("pkg:/components/data/texts.json"))
-    m.global.url_server = "192.168.100.13:3000/"
+    m.global.url_server = "https://rokube.netlify.app/api/"
     m.global.load = false
     m.global.credentials = invalid
     m.global.profile = invalid
