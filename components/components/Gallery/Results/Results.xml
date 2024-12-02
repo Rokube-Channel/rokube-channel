@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<component name="Result" extends="LayoutGroup">
+<component name="Result" extends="Group">
     <interface>
         <field id="uri" type="string" alias="img.uri" />
         <field id="duration" type="string" alias="duration.text" />
@@ -9,37 +9,40 @@
         <field id="date" type="string" alias="date.text" />
     </interface>
     <children>
-        <Group>
-            <Poster id="img"
-                width="336"
-                height="188"
-                loadDisplayMode = "scaleToFit"/>
-            <Rectangle 
-                color="#000000CD"
-                translation="[0,170]"
-                width="336"
-                height="20"/>
-            <Label id="duration"
-                font="font:SmallestBoldSystemFont"
-                width="336"
-                horizAlign="right"
-                translation="[0,170]"/>
-        </Group>
-        <Label id="title"
-            font="font:MediumBoldSystemFont"
-            wrap="true"
-            numLines="2"
-            width="336"/>
-        <Label id="subtitle"
-            font="font:MediumBoldSystemFont"
-            width = "336"/>
         <LayoutGroup
-            itemSpacings="10"
-            layoutDirection="horiz">
-            <Label id="views"
-                width="163"/>
-            <Label id="date"
-                width="163"/>
+            itemSpacings="10">
+            <Group>
+                <Poster id="img"
+                    width="336"
+                    height="188"
+                    loadDisplayMode = "scaleToFit"/>
+                <Rectangle 
+                    color="#000000CD"
+                    translation="[0,170]"
+                    width="336"
+                    height="20"/>
+                <Label id="duration"
+                    font="font:SmallestBoldSystemFont"
+                    width="336"
+                    horizAlign="right"
+                    translation="[0,170]"/>
+            </Group>
+            <Label id="title"
+                font="font:MediumBoldSystemFont"
+                wrap="true"
+                maxLines="2"
+                width="336"/>
+            <Label id="subtitle"
+                font="font:MediumBoldSystemFont"
+                width = "336"/>
+            <LayoutGroup
+                itemSpacings="10"
+                layoutDirection="horiz">
+                <Label id="views"
+                    width="163"/>
+                <Label id="date"
+                    width="163"/>
+            </LayoutGroup>
         </LayoutGroup>
     </children>
 </component>

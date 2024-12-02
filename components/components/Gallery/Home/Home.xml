@@ -14,8 +14,8 @@
             translation="[115,115]">
             <MarkupGrid id="results"
                 itemComponentName = "MarkupListResult"
-                itemSize = "[336, 280]" 
-                itemSpacing = "[ 30, 30 ]"
+                itemSize = "[336, 188]" 
+                itemSpacing = "[ 30, 130 ]"
                 vertFocusAnimationStyle="fixedFocus"
                 numColumns="3"
                 numRows="2"/>
